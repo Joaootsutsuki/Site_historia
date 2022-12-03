@@ -21,19 +21,18 @@ checkbox.addEventListener('change', function(){
 
 function changeFundo(){
     const buttonChecked = document.querySelector('input[name="contraste"]:checked').value;
+    const body = document.querySelector("body")
     switch (buttonChecked){
         case 'normal':
-            let label_normal = document.getElementById('label_normal');
+            body.classList.remove("white");
+            console.log("normal")
             break
 
         case 'branco':
-            let label_branco = document.getElementById('label_branco');
+            body.classList.toggle("white");
+            console.log("branco")
             break
-        
-        case 'preto':
-            let label_preto = document.getElementById('label_preto');
-            break
-        
+
     }
 }
 
@@ -58,3 +57,11 @@ const observer = new IntersectionObserver(entries =>{
 observer.observe(header);
 
 
+
+function irConteudo(){
+    window.scrollTo(0, 749);
+}
+function irRodape(){
+    window.scrollTo(0, 2685);
+}
+ 

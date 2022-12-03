@@ -8,9 +8,9 @@
     <meta name="keywords" content="segunda guerra mundial, tecnologia, aliados, eixo">
     <meta name="author" content="João Vitor Vitosoaski">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
     
-    <title>Document</title>
+    <title>Segunda Guerra Mundial</title>
 </head>
 <body>
     
@@ -18,11 +18,9 @@
         <div>
             <input type="radio" name="contraste" class="buttons_menu" id="contraste_normal" value="normal"  onchange="changeFundo()"checked>
             <input type="radio" name="contraste" class="buttons_menu" id="contraste_branco" value="branco" onchange="changeFundo()">
-            <input type="radio" name="contraste" class="buttons_menu" id="contraste_preto" value="preto" onchange="changeFundo()">
             <input type="checkbox" name="som" id="sound_checkbox" class="buttons_menu">
             <label class="label label1 fas fa-eye " for="contraste_normal" id="label_normal"></label>
             <label class="label label2 fas fa-sun " for="contraste_branco" id="label_branco"></label>
-            <label class="label label3 fas fa-moon " for="contraste_preto" id="label_preto"></label>
             <label class="label label4 fas" for="sound_checkbox" id="label_sound"></label>
             
         </div>
@@ -33,9 +31,8 @@
 
         <div class="menu">
             <ul>
-                <li>Conteúdo</li>
-                <li>Rodapé</li>
-                <li>...</li>
+                <li onclick="irConteudo()">Conteúdo</li>
+                <li onclick="irRodape()">Rodapé</li>
             </ul>
         </div>
     </nav> 
@@ -58,11 +55,36 @@
 
         <div class="item sidenav"></div>
         <div class="item content">
+            <p>A Segunda Guerra Mundial foi um conflito de proporções globais que aconteceu entre 1939 e 1945. Caracterizada como um conflito em estado de guerra total, a Segunda Guerra Mundial fez Aliados e Eixo enfrentarem-se na Europa, África, Ásia e Oceania. Por mais que a guerra seja algo ruim, ela trouxe evoluções tanto bélicas como tecnológicas para o mundo.Algumas das tecnologias usadas durante a Segunda Guerra foram desenvolvidas durante as décadas de 1920 e 1930. Muitas guerras tiveram efeitos importantes nas tecnologias atuais, no entanto, em comparação às guerras anteriores, a Segunda Guerra Mundial teve um maior impacto na tecnologia e nos dispositivos usados até hoje.</p>
+            <img src="img/computador_antigo.png" alt="Imagem de um computador antigo" class="imgs_content">
+
+            <h1 class="title_content">Tecnologias</h1>
+
+            <p>Os britânicos foram os primeiros a desenvolverem computadores eletrônicos que eram usados ​​principalmente para quebrar os códigos "Enigma", que eram códigos secretos nazistas. Esses códigos, para os aliados, eram indecifráveis para mensagens de rádio. O criador de um desses computadores eletrônicos foi Alan Turing, um gênio que foi crucial para os Aliados ganharem a guerra. Alan Turing é considerado o pai dos computadores nos dias atuais. Além dos computadores, outras tecnologias foram criadas para a guerra, porém hoje em dia fazem parte do nosso cotidiano são GPS, Câmeras Digitais, Internet e os Transistores Elétricos. Os transistores já existiam naquela, porém eram mecânicos, assim, sendo muito menos eficientes do que um elétrico.</p>
+
+            <div class="tecs_imgs">
+                <img src="img/alan turing.jpg" alt="Imagem de Alan Turing" class="imgs_content">
+                <img src="img/transistores.jpg" alt="Imagem de Transistores" class="imgs_content">
+            </div>
+
+            <h1 class="title_content">Costa do Ouro Britânica</h1>
+
+            <p>Foram nos ensinados nas escolas sobre quais eram os países da segunda guerra mundial, porém os países africanos não foram tão destacados. Uma colônia que vale destacar na Segunda Guerra é a Costa do Ouro Britânica (atual Gana) que desempenharam um papel importante na Campanha da África Oriental, particularmente no ataque à Etiópia controlada pelos italianos. Acra, a capital, hospedou aeronaves aliadas enquanto voavam entre os Estados Unidos, Europa e o Pacífico. A Costa do Ouro Britânica também se beneficiou financeiramente da guerra. Em 1945, o aumento dos gastos do governo britânico e a introdução de um imposto de renda levaram a uma expansão da receita local. A guerra mudou a demografia da colônia, concentrando trabalhadores em algumas grandes cidades. O governo colonial lançou um programa para lidar com a escassez de moradias construindo com material de construção local barato, porém robusto (um terremoto em 1939 havia danificado infraestruturas em muitas cidades). A economia da Costa do Ouro Britânica (atual Gana) é principalmente a agricultura, mas além da agricultura a Costa do Ouro tinha recursos minerais como por exemplo, ouro, diamantes, manganês e bauxita. Também possui petróleo, embora em pequena quantidade.</p>
+
+            <div class="tecs_imgs">
+                <img src="img/gana.png" alt="Imagem do mapa de Gana" class="img_gana">
+            </div>
             
         </div>
         <div class="item coluna1"></div>
 
     </main>
+    <footer>
+        <div class="footer_content">
+            <span>Created by: João Vitosoaski</span>
+            <span>© 2022 Direitos autorais</span>
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
