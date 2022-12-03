@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para mostrar a história da Segunda Guerra Mundial ">
+    <meta name="keywords" content="segunda guerra mundial, tecnologia, aliados, eixo">
+    <meta name="author" content="João Vitor Vitosoaski">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        <div>
+            <input type="radio" name="contraste" class="buttons_menu" id="contraste_normal" value="normal"  onchange="changeFundo()"checked>
+            <input type="radio" name="contraste" class="buttons_menu" id="contraste_branco" value="branco" onchange="changeFundo()">
+            <input type="radio" name="contraste" class="buttons_menu" id="contraste_preto" value="preto" onchange="changeFundo()">
+            <input type="checkbox" name="som" id="sound_checkbox" class="buttons_menu">
+            <label class="label label1 fas fa-eye " for="contraste_normal" id="label_normal"></label>
+            <label class="label label2 fas fa-sun " for="contraste_branco" id="label_branco"></label>
+            <label class="label label3 fas fa-moon " for="contraste_preto" id="label_preto"></label>
+            <label class="label label4 fas" for="sound_checkbox" id="label_sound"></label>
+            
+        </div>
+        
+        <div class="img_logo">
+            <a><img src="img/feb_logo.png" alt="FEB" onclick="playFEB()"></a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>Conteúdo</li>
+                <li>Rodapé</li>
+                <li>...</li>
+            </ul>
+        </div>
+    </nav> 
+    <header>
+
+        <div class="img_header_back">
+            <img src="img/background_header.png" alt="Imagem da Segunda Guerra Mundial">
+            <div class="divider"></div>
+            <div class="linhas"></div>
+        </div>
+
+    </header>
+    <main class="estrutura">
+        <div class="titulo_header" id="titulo_header">
+            <div>
+                <p class="first">Segunda Guerra</p>
+                <p class="second">Mundial</p>
+            </div>
+        </div>
+
+        <div class="item sidenav"></div>
+        <div class="item content">
+            
+        </div>
+        <div class="item coluna1"></div>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
