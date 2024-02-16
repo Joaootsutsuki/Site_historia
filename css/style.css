@@ -200,7 +200,7 @@ nav{
 }
 
 .estrutura{
-    background: var(--background_main);
+    background: black;
     display: grid;
     grid-template-rows: 1fr 7fr;
     grid-template-columns: 23% 54% 23%;
@@ -212,7 +212,7 @@ nav{
 
 .sidenav{
     grid-area: sidenav;
-    background: var(--border_site);
+    background: black;
 }
 .content{
     grid-area: content;
@@ -225,7 +225,7 @@ nav{
 }
 .coluna1{
     grid-area: coluna1;
-    background-color: var(--border_site);
+    background-color: black;
    
 }
 
